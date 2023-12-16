@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <style>
+        .mydiv{
+            background-color: rgb(221, 216, 211);
+            height: 400px;
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: auto;
+            margin-top: 80px;
+        }
+        .head{
+            height: 50px;
+            width: 1520px;
+            background-color: rgb(18, 162, 44);
+            display: flex;
+        }
+        .button{
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 25px;
+            background-color: rgb(18, 162, 44);
+            color: azure;
+            height: 45px;
+            width: 130px;
+            border-color: rgb(221, 216, 211);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 style="color: azure; font-size: x-large; padding-left: 10px; margin-top: 12px;">ebill.</h1>
+        <h1 style="color: azure; font-size: x-large; margin-top: 12px; text-align: right; margin-left: auto; padding-right: 10px;">Electricity Bill Management</h1>
+    </div>
+    <div class="mydiv" style="padding-left: 40px;">
+        <h1 style="padding-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Create account</h1>
+        <label for="uname" style="font-size: large;">Username</label><br>
+        <input type="text" id="uname" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+        <label for="pword" style="font-size: large;">Password</label><br>
+        <input type="text" id="pword" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+        <label for="rpword" style="font-size: large;">Re-enter password</label><br>
+        <input type="text" id="rpword" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br><br>
+        <button class="button" onclick="showAlert()">Create ></button>
+    </div>
+</body>
+</html>

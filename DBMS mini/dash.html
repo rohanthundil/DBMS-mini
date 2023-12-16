@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        .head{
+            height: 50px;
+            width: 1520 px;
+            background-color: rgb(18, 162, 44);
+            display: flex;
+        }
+        .toten{
+            height: 150px;
+            width: 300px;
+            background-color: rgb(18, 162, 44);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .totpay{
+            height: 150px;
+            width: 300px;
+            background-color: rgb(18, 162, 44);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .totdue{
+            height: 150px;
+            width: 300px;
+            background-color: rgb(18, 162, 44);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .info{
+            height: 250px;
+            width: 1000px;
+            background-color: rgb(221, 216, 211);
+            border-radius: 5px;
+        }
+        .menu{
+            height: 680px;
+            width: 300px;
+            background-color: rgb(221, 216, 211);
+            border-radius: 5px;
+        }
+        .lbutton{
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border: none;
+            font-size: large;
+            outline: none;
+            background-color: rgb(221, 216, 211);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 style="color: azure; font-size: x-large; padding-left: 10px; margin-top: 12px;">ebill.</h1>
+    </div>
+    <br>
+    <div style="display: flex;">
+        <div class="menu" style="padding-left: 20px;">
+            <h1>Menu</h1><br>
+            <button class="lbutton" onclick="showAlert()">Dashboard</button>
+            <hr style="color: black; width: 200px;">
+            <button class="lbutton" onclick="showAlert()">Download Bill Summary</button>
+            <hr style="color: black; width: 200px;">
+            <button class="lbutton" onclick="showAlert()">Pay Due</button>
+            <hr style="color: black; width: 200px;">
+            <button class="lbutton" onclick="showAlert()">Transaction History</button>
+            <hr style="color: black; width: 200px;">
+        </div>
+        <div class="info" style="padding-left: 30px; margin-left: 20px;">
+            <h1 style="color: rgb(0, 0, 0); font-size: xxx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rohan Thundil Rajeev</h1>
+            <div style="display: flex;">
+                <div>
+                    <h1 style="font-size: large;">Account Number</h1>
+                    <p style="color: rgb(18, 162, 44); font-size: x-large;">202369420</p>
+                </div>
+                <div style="padding-left: 150px;">
+                    <h1 style="font-size: large;">Account Type</h1>
+                    <p style="color: rgb(18, 162, 44); font-size: x-large;">Residential</p>
+                </div>
+            </div>
+            <br>
+            <div style="display: flex; margin-top: 50px;">
+                <div class="toten" style="padding-left: 20px;">
+                    <h1 style="font-size: x-large; padding-top: 10px; color: azure;">Energy Consumption</h1>
+                    <p style="color: azure;">4200 Kwh</p>
+                </div>
+                <div class="totdue" style="padding-left: 20px; margin-left: 30px;">
+                    <h1 style="font-size: x-large; padding-top: 10px; color: azure;">Amount Due</h1>
+                    <p style="color: azure;"> Rs. 0.00</p>
+                </div>
+                <div class="totpay" style="padding-left: 20px; margin-left: 30px;">
+                    <h1 style="font-size: x-large; padding-top: 10px; color: azure;">Total Amount Paid</h1>
+                    <p style="color: azure;"> Rs. 1235.73</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

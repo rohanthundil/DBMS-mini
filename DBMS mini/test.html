@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html style="background-image:radial-gradient(rgb(233, 96, 238),rgb(152, 6, 219));">
+<head>
+   <title>Registration Form</title>
+   <style>
+        .mydiv{
+            height: 400px;
+            width: 680px;
+            margin: auto; 
+            background-color:   rgb(255, 251, 246);
+            margin-top: 90px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .button{
+            text-align: center;
+            background-color: rgb(19, 120, 236);
+            cursor: pointer;
+            color: aliceblue;
+            border-radius: 3px;
+            width: 80px;
+            height: 28px;
+        }
+        label{
+            font-size: medium;
+        }
+
+   </style>
+</head>
+<body>
+    <div class="mydiv" style="display: flex;">
+        <form action="#" method="get">
+            <H1 style="padding-left: 30px; font-family: Arial, Helvetica, sans-serif;">Registration Form</H1>
+            <div style="display: flex;">
+                <div style="padding-left: 30px;">  
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" style="height: 20px; width: 230px;" required><br><br>
+                    <label for="bday">Birthday</label><br>
+                    <input type="date" id="bday" style="height: 25px; width: 234px;" required><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" style="height: 20px; width: 230px;" required>
+                </div>
+                <div style="padding-left: 80px;">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" style="height: 20px; width: 230px;" required><br><br>
+                    <label for="number">Phone number</label><br>
+                    <input type="tel" id="number" style="height: 20px; width: 230px;" required><br><br>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="radio">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="Female" name="radio">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <br>
+            <div style="padding-left: 30px;">
+                <label for="subject">Subject</label><br>
+                <select name="subject" id="subject" style="height: 28px; width: 560px;">
+                    <optgroup>
+                        <option value="Choose Any">Choose Option</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="English">English</option>
+                        <option value="Social Science">Social Science</option>
+                    </optgroup>
+                    <br><br>
+                </select>
+            </div>
+            <br>
+            <div style="padding-left: 30px;">
+                <button class="button" onclick="showAlert()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function showAlert(){
+            alert("Message Sent!")
+        }
+    </script>
+</body>
+</html>

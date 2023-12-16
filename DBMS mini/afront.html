@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(231, 235, 232);    ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Management</title>
+    <style>
+        .mydiv{
+            height: 400px;
+            width:  800px;
+            background-color: rgb(221, 216, 211);
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+        }
+        .head{
+            height: 50px;
+            width: 1520 px;
+            background-color: rgb(18, 162, 44);
+            display: flex;
+        }
+        .lbutton{
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border: none;
+            font-size: large;
+            outline: none;
+            background-color: rgb(221, 216, 211) ;
+        }
+        .button{
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 25px;
+            background-color: rgb(18, 162, 44);
+            color: azure;
+            height: 45px;
+            width: 130px;
+            border-color: rgb(221, 216, 211);
+            cursor: pointer;
+
+        }
+        .cbutton{
+            color: rgb(18, 162, 44);
+            cursor: pointer;
+            border: none;
+            font-size: medium;
+            outline: none;
+            background-color: rgb(221, 216, 211) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="head" style="display: flex;">
+        <h1 style="font-size: x-large; color: azure; padding-left: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;" >ebill.</h1>
+        <h1 style="color: azure; font-size: x-large; margin-top: 12px; text-align: right; margin-left: auto; padding-right: 10px;">Electricity Bill Management</h1>
+    </div>
+    <div class="mydiv" style="display: flex;">
+        <div style="padding-left: 30px; padding-top: 20px;">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login as</h1><br>
+            <button class="lbutton" onclick="showAlert()">Admin</button>
+            <hr style="color: black; width: 200px;">
+            <button class="lbutton" onclick="showAlert()">Customer</button>
+            <hr style="color: black; width: 200px;">
+        </div>
+        <div style="padding-left: 120px; padding-top: 20px;">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login as admin</h1><br>
+            <label for="uname" style="font-size: large;">Username</label><br>
+            <input type="text" id="uname" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+            <label for="pword" style="font-size: large;">Password</label><br>
+            <input type="text" id="pword" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br>
+            <br>
+            <button class="cbutton" onclick="showAlert()">Forgot password</button><br><br>
+            <button class="button" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="showAlert()">Login ></button>
+        </div>
+   </div>
+</body>
+</html>

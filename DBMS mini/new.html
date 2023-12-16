@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        .mydiv{
+            background-color: rgb(221, 216, 211);
+            height: 500px;
+            width: 710px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: auto;
+            margin-top: 80px;
+        }
+        .head{
+            height: 50px;
+            width: 1520px;
+            background-color: rgb(18, 162, 44);
+            display: flex;
+        }
+        .button{
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 25px;
+            background-color: rgb(18, 162, 44);
+            color: azure;
+            height: 45px;
+            width: 130px;
+            border-color: rgb(221, 216, 211);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 style="color: azure; font-size: x-large; padding-left: 10px; margin-top: 12px;">ebill.</h1>
+        <h1 style="color: azure; font-size: x-large; margin-top: 12px; text-align: right; margin-left: auto; padding-right: 10px;">Electricity Bill Management</h1>
+    </div>
+    <br>
+    <div class="mydiv">
+        <h1 style="padding-left: 30px; padding-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Create account</h1>
+        <div style="display: flex;">
+            <div style="padding-left: 30px;">
+                <label for="fname" style="font-size: large;">First name</label><br>
+                <input type="text" id="fname" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="gender" style="font-size: large;">Gender</label><br>
+                <select name="gender" id="gender" style="height: 34px; width: 310px; border-radius: 5px; border-color: rgb(198, 197, 196);">
+                    <optgroup>
+                        <option value="Select">--Select--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>   
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for="email" style="font-size: large;">Email</label><br>
+                <input type="email" id="email" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="number" style="font-size: large;">Phone number</label><br>
+                <input type="tel" id="number" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="add" style="font-size: large;">Address</label><br>
+                <input type="text" id="add" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <button class="button" onclick="showAlert()">Next ></button>
+            </div>
+            <div style="padding-left: 30px;">
+                <label for="lname" style="font-size: large;">Last name</label><br>
+                <input type="text" id="lname" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="bday" style="font-size: large;">Birthday</label><br>
+                <input type="date" id="bday" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="lname" style="font-size: large;">Nationality</label><br>
+                <input type="text" id="lname" style="height: 30px; width: 300px; border-radius: 5px; border-color: rgb(198, 197, 196);" required><br><br>
+                <label for="Account" style="font-size: large;">Account type</label><br>
+                <select name="Account" id="Account" style="height: 34px; width: 310px; border-radius: 5px; border-color: rgb(198, 197, 196);">
+                    <optgroup>
+                        <option value="Select">--Select--</option>
+                        <option value="Residential">Male</option>
+                        <option value="Commercial">Female</option>   
+                    </optgroup>
+                </select>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
